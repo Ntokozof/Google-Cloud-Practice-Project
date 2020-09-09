@@ -2,15 +2,15 @@
 Google Cloud Practice Project
 
 
-<b>Google Cloud Fundamentals: Getting Started with Compute Engine<b>
-I.	First I create 2 VM’s my-vm-1 and my-vm-2 in the region us-central1 and zones us-central1-a and us-central1-b respectively 
-gcloud compute zones list | grep us-central1
-gcloud config set compute/zone us-central1-a
-gcloud compute  instances create “my-vm-1” \ -- machine-type “n1-standaed-1” \ --image-project “debian-cloud” \ --image “debian-9-stretch-v20190213” \ --subnet “default”
+<b>Google Cloud Fundamentals: Getting Started with Compute Engine<b> <br>
+I.	First I create 2 VM’s my-vm-1 and my-vm-2 in the region us-central1 and zones us-central1-a and us-central1-b respectively <br>
+gcloud compute zones list | grep us-central1 <br>
+gcloud config set compute/zone us-central1-a <br>
+gcloud compute  instances create “my-vm-1” \ -- machine-type “n1-standaed-1” \ --image-project “debian-cloud” \ --image “debian-9-stretch-v20190213” \ --subnet “default” <br>
 
-gcloud compute zones list | grep us-central1
-gcloud config set compute/zone us-central1-b
-gcloud compute  instances create “my-vm-2” \ -- machine-type “n1-standaed-1” \ --image-project “debian-cloud” \ --image “debian-9-stretch-v20190213” \ --subnet “default”
+gcloud compute zones list | grep us-central1 <br>
+gcloud config set compute/zone us-central1-b <br>
+gcloud compute  instances create “my-vm-2” \ -- machine-type “n1-standaed-1” \ --image-project “debian-cloud” \ --image “debian-9-stretch-v20190213” \ --subnet “default” <br>
 
 II.	I open the command prompt for my-vm-2 instance by clicking SSH of VN instance.
 III.	I use the command ping my-vm-1 from my-vm-2 SSH then Ctrl+C to abort the ping command.
