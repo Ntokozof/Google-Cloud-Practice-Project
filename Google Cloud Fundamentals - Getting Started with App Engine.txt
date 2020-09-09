@@ -13,16 +13,21 @@ II.	In the Cloud Shell I used gcloud auth list command to view active account na
 
 III.	I list the project ID using command gcloud config list project 
 
-IV.	To initialize App Engine in my project I used the command                                                           gcloud app create –project=$DEVSHELL_PROJECT_ID
+IV.	To initialize App Engine in my project I used the command   
+    gcloud app create –project=$DEVSHELL_PROJECT_ID
 
-V.	I Cloned the source code repository for a sample application                                                               git clone https://github.com/GoogleCloudPlatform/python-docs-samples
+V.	I Cloned the source code repository for a sample application                                                              
+    git clone https://github.com/GoogleCloudPlatform/python-docs-samples
 
-VI.	I navigate to the source directory                                                                                                                cd python-docs-samples/appengine/standard_python3/hello_world
+VI.	I navigate to the source directory                                                                                                                
+    cd python-docs-samples/appengine/standard_python3/hello_world
 
-VII.	To download and update the packages list I ruined the command                                                 sudo apt-get update
+VII.	To download and update the packages list I ruined the command                                                
+    sudo apt-get update
 
-VIII.	To set up a virtual environment where I run the application I used the following command.                                                           sudo apt-get install virtualenv                                
-virtualenv -p python3 venv
+VIII.	To set up a virtual environment where I run the application I used the following command.                                                           
+  sudo apt-get install virtualenv                                
+  virtualenv -p python3 venv
 
 IX.	To activate the virtual environment I used the command.
 source venv/bin/activate
@@ -42,7 +47,8 @@ XIV.	Using the Cloud Console, verify that the app is not deployed. In the Cloud 
 XV.	To get back to the source directory so I can be able to deploy the app I used the command:
 cd ~/python-docs-samples/appengine/standard_python3/hello_world
 
-XVI.	To deploy application I used.                                                                                                                gcloud app deploy 
+XVI.	To deploy application I used.                                                                                                                
+  gcloud app deploy 
 
 Do you want to continue yes and enter as prompted.
 
@@ -50,7 +56,8 @@ XVII.	To launch the browser and view the app I used
 gcloud app browse
 
 
-XVIII.	The app can be viewed in the browser at                                     http://YOUR_PROJECT_ID.appspot.com
+XVIII.	The app can be viewed in the browser at                                     
+  http://YOUR_PROJECT_ID.appspot.com
 
 XIX.	To undeploy the app under App Engine -> settings I clicked Disable application, enterd the App ID and clicked DISABLE the app is no longer available at http://YOUR_PROJECT_ID.appspot.com in the browser.
 
